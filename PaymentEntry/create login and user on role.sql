@@ -1,0 +1,4 @@
+USE AP 
+CREATE LOGIN AAaron WITH PASSWORD = 'aaa9999', DEFAULT_DATABASE = AP 
+CREATE USER Aaron FOR LOGIN AAaron 
+EXEC sp_AddRoleMember PaymentEntry, Aaron
